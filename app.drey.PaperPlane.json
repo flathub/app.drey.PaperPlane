@@ -222,8 +222,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/paper-plane-developers/paper-plane/releases/download/v0.1.0-beta.1/paper-plane-v0.1.0-beta.1.tar.xz",
-                    "sha256": "1e940b8e23a108d2db7a7c3cfd53eb6fb922779b344e43fb44372e1b4b769208",
+                    "url": "https://github.com/paper-plane-developers/paper-plane/releases/download/v0.1.0-beta.3/paper-plane-v0.1.0-beta.3.tar.xz",
+                    "sha256": "0250a1ae05cfb96ea9f6da298f8a0b21563fcba73f635b0ff3d3b295679e40c6",
                     "strip-components": 0
                 }
             ]
