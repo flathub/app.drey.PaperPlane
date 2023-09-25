@@ -1,7 +1,7 @@
 {
     "id": "app.drey.PaperPlane",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -17,7 +17,7 @@
         "--env=RUST_BACKTRACE=1"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm15/bin:/app/bin"
+        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm16/bin:/app/bin"
     },
     "cleanup": [
         "/etc",
@@ -117,8 +117,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "06b3ced8e7fc936caed43379b120d75be09713ca",
-                    "tag": "4.10.3"
+                    "commit": "d6b966ba32b5fd7ccc207b98974a92841d9a24ae",
+                    "tag": "4.12.2"
                 },
                 {
                     "type": "patch",
@@ -127,73 +127,19 @@
             ]
         },
         {
-            "name": "appstream",
+            "name": "libshumate",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dbuildtype=release",
-                "-Dstemming=false",
                 "-Dgir=false",
-                "-Dapidocs=false"
-            ],
-            "cleanup": [
-                "/bin/appstreamcli"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/ximion/appstream.git",
-                    "commit": "1ee6af91310f9deb47f3863a7a7ffb22c46bcce6",
-                    "tag": "v0.16.2"
-                }
-            ],
-            "modules": [
-                {
-                    "name": "libyaml",
-                    "buildsystem": "autotools",
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/yaml/libyaml.git",
-                            "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
-                            "tag": "0.2.5"
-                        }
-                    ]
-                },
-                {
-                    "name": "libxmlb",
-                    "buildsystem": "meson",
-                    "config-opts": [
-                        "-Dbuildtype=release",
-                        "-Dintrospection=false",
-                        "-Dtests=false",
-                        "-Dcli=false",
-                        "-Dgtkdoc=false"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/hughsie/libxmlb.git",
-                            "commit": "6191220071233972d798b57841d08e4964952a17",
-                            "tag": "0.3.11"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "libadwaita",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuildtype=release",
                 "-Dvapi=false",
-                "-Dtests=false",
-                "-Dexamples=false"
+                "-Dgtk_doc=false"
             ],
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "57bc21b4c51aa361609fe6f57031630589391b0b"
+                    "url": "https://gitlab.gnome.org/GNOME/libshumate/",
+                    "commit": "18587662286d0f551e33e3411b3a0c1375507564",
+                    "tag": "1.1.0"
                 }
             ]
         },
@@ -208,7 +154,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tdlib/td.git",
-                    "commit": "8517026415e75a8eec567774072cbbbbb52376c1"
+                    "commit": "2589c3fd46925f5d57e4ec79233cd1bd0f5d0c09"
                 }
             ]
         },
@@ -222,8 +168,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/paper-plane-developers/paper-plane/releases/download/v0.1.0-beta.3/paper-plane-v0.1.0-beta.3.tar.xz",
-                    "sha256": "0250a1ae05cfb96ea9f6da298f8a0b21563fcba73f635b0ff3d3b295679e40c6",
+                    "url": "https://github.com/paper-plane-developers/paper-plane/releases/download/v0.1.0-beta.4/paper-plane-v0.1.0-beta.4.tar.xz",
+                    "sha256": "af292302e834b37d3e2f60668d756b9de2405e9bbe4f6a547577e3522a4b7815",
                     "strip-components": 0
                 }
             ]
