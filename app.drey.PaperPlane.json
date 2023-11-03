@@ -117,8 +117,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "d6b966ba32b5fd7ccc207b98974a92841d9a24ae",
-                    "tag": "4.12.2"
+                    "commit": "11ef4c8f43dca478d6acfaa31a3fea659946db26",
+                    "tag": "4.12.3"
                 },
                 {
                     "type": "patch",
@@ -138,8 +138,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libshumate/",
-                    "commit": "18587662286d0f551e33e3411b3a0c1375507564",
-                    "tag": "1.1.0"
+                    "commit": "eeb257ab8cfca9133ec2e7da739d3ce815be7067",
+                    "tag": "1.1.2"
                 }
             ]
         },
@@ -168,8 +168,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/paper-plane-developers/paper-plane/releases/download/v0.1.0-beta.4/paper-plane-v0.1.0-beta.4.tar.xz",
-                    "sha256": "af292302e834b37d3e2f60668d756b9de2405e9bbe4f6a547577e3522a4b7815",
+                    "url": "https://github.com/paper-plane-developers/paper-plane/releases/download/v0.1.0-beta.5/paper-plane-v0.1.0-beta.5.tar.xz",
+                    "sha256": "1516a63a4b3ade61221cfb81205b974b5109529f897bf692a8fc0c2ee779202e",
                     "strip-components": 0
                 }
             ]
